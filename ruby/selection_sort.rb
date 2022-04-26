@@ -1,5 +1,14 @@
 def selection_sort(arr)
-  # type your code in here
+  newArr = []
+
+  while arr.length != 0
+    min = arr.min  
+    idx = arr.find_index(min)
+
+    newArr.push(min)
+    arr.delete_at(idx)
+  end
+  newArr
 end
 
 if __FILE__ == $PROGRAM_NAME
